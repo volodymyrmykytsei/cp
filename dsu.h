@@ -1,4 +1,6 @@
 struct DSU {
+    DSU() {}
+
     DSU(int N) {
         color.resize(N);
         siz.resize(N);
