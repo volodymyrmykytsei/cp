@@ -1,6 +1,7 @@
-template<size_t N>
 struct DSU {
-    DSU() {
+    DSU(int N) {
+        color.resize(N);
+        siz.resize(N);
         for (int i = 0; i < N; i++) {
             color[i] = i;
             siz[i] = 1;
@@ -27,6 +28,6 @@ struct DSU {
         return siz[x];
     }
 
-    int color[N];
-    int siz[N];
+    vector<int> color;
+    vector<int> siz;
 };
